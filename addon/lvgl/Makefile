@@ -11,11 +11,7 @@ include \
 	$(LVGL_DIR)/lvgl/lvgl.mk \
 	$(EEZ_DIR)
 
-ui.o: $(CIRCLEHOME)/$(EEZ_DIR_NAME)/ui.c $(CIRCLEHOME)/$(EEZ_DIR_NAME)/ui.h $(CIRCLEHOME)/$(EEZ_DIR_NAME)/eez-framework.h
-
-OBJS = \
-	ui.o $(CSRCS:.c=.o) \
-	lvgl.o $(CSRCS:.c=.o)
+OBJS = lvgl.o $(CSRCS:.c=.o)
 
 EXTRACLEAN += $(CSRCS:.c=.o) $(CSRCS:.c=.d)
 
@@ -31,6 +27,7 @@ libeez.a: $(OBJS)
 	@$(AR) cr $@ $(OBJS)
 
 include $(CIRCLEHOME)/Rules.mk
+include $(CIRCLEHOME)/eez.mk
 
 INCLUDE += -I $(LVGL_DIR)
 CFLAGS += -Wno-narrowing -DEEZ_FOR_LVGL

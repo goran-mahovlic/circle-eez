@@ -1,5 +1,0 @@
-CSRCS += $(shell find -L $(EEZ_DIR)/$(EEZ_DIR_NAME) -name "*.c" -name *.cpp)
-CSRCS += $(shell find -L $(EEZ_DIR)/$(EEZ_DIR_NAME)/eez -name "*.c" -name *.cpp)
-CSRCS += $(shell find -L $(EEZ_DIR)/$(EEZ_DIR_NAME)/eez/core -name "*.c" -name *.cpp)
-CSRCS += $(shell find -L $(EEZ_DIR)/$(EEZ_DIR_NAME)/eez/flow -name "*.c" -name *.cpp)
-CSRCS += $(shell find -L $(EEZ_DIR)/$(EEZ_DIR_NAME)/eez/libs -name "*.c" -name *.cpp)

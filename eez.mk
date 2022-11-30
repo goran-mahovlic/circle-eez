@@ -1,0 +1,5 @@
+CSRCS += $(shell find -L $(CIRCLEHOME)/addon/eez-framework/src -name "*.c" -name *.cpp)
+CSRCS += $(shell find -L $(CIRCLEHOME)/addon/eez-framework/src/eez -name "*.c" -name *.cpp)
+CSRCS += $(shell find -L $(CIRCLEHOME)/addon/eez-framework/src/eez/core -name "*.c" -name *.cpp)
+CSRCS += $(shell find -L $(CIRCLEHOME)/addon/eez-framework/src/eez/flow -name "*.c" -name *.cpp)
+CSRCS += $(shell find -L $(CIRCLEHOME)/addon/eez-framework/src/eez/libs -name "*.c" -name *.cpp)

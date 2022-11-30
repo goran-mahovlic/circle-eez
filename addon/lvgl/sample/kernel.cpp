@@ -19,8 +19,8 @@
 //
 #include "kernel.h"
 #include "../lvgl/demos/lv_demos.h"
-#include "../eez-framework/src/eez-framework.h"
-#include "../eez-framework/src/eez/ui.h"
+#include "../../eez-framework/src/ui.h"
+#include "../../eez-framework/src/eez/flow/lvgl_api.h"
 
 static const char FromKernel[] = "kernel";
 
