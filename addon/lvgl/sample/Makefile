@@ -7,6 +7,7 @@ CIRCLEHOME = ../../..
 OBJS	= main.o kernel.o
 
 LIBS	= ../liblvgl.a \
+         ../libeez-framework.a \
 	  $(CIRCLEHOME)/lib/usb/libusb.a \
 	  $(CIRCLEHOME)/lib/input/libinput.a \
 	  $(CIRCLEHOME)/lib/fs/libfs.a \

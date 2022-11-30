@@ -19,6 +19,8 @@
 //
 #include "kernel.h"
 #include "../lvgl/demos/lv_demos.h"
+#include "../eez-framework/src/eez-framework.h"
+#include "../eez-framework/src/eez/ui.h"
 
 static const char FromKernel[] = "kernel";
 
@@ -90,13 +92,14 @@ TShutdownMode CKernel::Run (void)
 {
 	m_Logger.Write (FromKernel, LogNotice, "Compile time: " __DATE__ " " __TIME__);
 
-	lv_demo_widgets ();
-
+	//lv_demo_widgets ();
+	ui_init();
 	while (1)
 	{
 		boolean bUpdated = m_USBHCI.UpdatePlugAndPlay ();
 
 		m_GUI.Update (bUpdated);
+		ui_tick();
 	}
 
 	return ShutdownHalt;
