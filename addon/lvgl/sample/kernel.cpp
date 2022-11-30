@@ -18,9 +18,6 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //
 #include "kernel.h"
-#include "../lvgl/demos/lv_demos.h"
-#include "../../eez-framework/src/ui.h"
-#include "../../eez-framework/src/eez/flow/lvgl_api.h"
 
 static const char FromKernel[] = "kernel";
 

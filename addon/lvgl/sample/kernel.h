@@ -33,6 +33,8 @@
 #include <circle/input/rpitouchscreen.h>
 #include <lvgl/lvgl.h>
 #include <circle/types.h>
+#include <eez-project/ui/ui.h>
+#include <eez-framework/src/eez-framework.h>
 
 enum TShutdownMode
 {
