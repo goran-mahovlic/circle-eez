@@ -8,7 +8,8 @@ LVGL_DIR = .
 LVGL_DIR_NAME = lvgl
 
 include $(LVGL_DIR)/lvgl/lvgl.mk \
-	$(CIRCLEHOME)/addon/eez-project/eez.mk
+        $(CIRCLEHOME)/addon/eez-project/eez-framework.mk \
+	$(CIRCLEHOME)/addon/eez-project/eez-project.mk
 
 OBJS = lvgl.o $(CSRCS:.c=.o)
 
